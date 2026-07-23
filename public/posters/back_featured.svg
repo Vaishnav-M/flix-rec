@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600">
+  <rect width="100%" height="100%" fill="#0b0f1a" />
+  <circle cx="1100" cy="80" r="220" fill="#1e293b" opacity="0.3" />
+  <text x="6%" y="60%" fill="#fff" font-size="56" font-family="Arial" font-weight="700">Featured Movie</text>
+</svg>

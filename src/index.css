@@ -1,0 +1,55 @@
+:root{
+  --bg:#0b0b0b;
+  --muted:#b3b3b3;
+  --accent:#e50914;
+}
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:#fff;
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;padding:12px 24px;background:linear-gradient(180deg, rgba(0,0,0,0.6), transparent);position:sticky;top:0;z-index:20
+}
+.logo{font-weight:800;color:var(--accent);letter-spacing:2px}
+.nav-links a{color:#ddd;margin-right:16px;text-decoration:none;font-weight:500}
+.nav-right .profile{background:transparent;border:0;color:#fff;font-size:18px}
+
+.banner{background-size:cover;background-position:center;min-height:55vh;display:flex;align-items:flex-end;padding:40px 24px;position:relative}
+.banner-fade{position:absolute;left:0;right:0;bottom:0;height:35%;background:linear-gradient(180deg, transparent rgba(0,0,0,0.8));}
+.banner-content{position:relative;z-index:2;max-width:70%}
+.banner-title{font-size:2rem;margin:0 0 8px}
+.banner-desc{color:var(--muted);max-width:60%;line-height:1.3}
+.banner-buttons{margin-top:16px}
+.btn{background:rgba(255,255,255,0.1);border:0;color:#fff;padding:10px 16px;margin-right:8px;border-radius:4px;cursor:pointer}
+.btn.play{background:#fff;color:#000}
+
+.content{padding:24px}
+.row{margin-bottom:28px}
+.row-header{display:flex;align-items:center;justify-content:space-between}
+.row-title{margin:0 0 12px}
+.row-actions .chev{background:rgba(255,255,255,0.06);border:0;padding:6px 10px;margin-left:6px;border-radius:4px;cursor:pointer;color:#fff}
+.row-posters{display:flex;gap:12px;overflow-x:auto;padding-bottom:8px}
+.row-posters::-webkit-scrollbar{height:8px}
+.row-posters::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.08);border-radius:4px}
+
+.card{min-width:160px;flex:0 0 auto;position:relative;cursor:pointer}
+.card img{width:100%;height:auto;border-radius:6px;display:block}
+.card-overlay{position:absolute;left:0;right:0;bottom:0;padding:8px;background:linear-gradient(0deg, rgba(0,0,0,0.8), transparent);opacity:0;transform:translateY(20%);transition:all 180ms ease-in-out;border-radius:0 0 6px 6px}
+.card-overlay.show{opacity:1;transform:translateY(0)}
+.card-title{font-size:0.9rem;margin-bottom:6px}
+.play-btn{background:var(--accent);border:0;padding:6px 8px;border-radius:4px;color:#fff}
+
+@media(min-width:768px){
+  .banner-title{font-size:3rem}
+  .card{min-width:200px}
+}
+
+@media(max-width:480px){
+  .banner-content{max-width:100%}
+  .banner-desc{display:none}
+  .nav-links{display:none}
+}
