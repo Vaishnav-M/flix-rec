@@ -6,6 +6,4 @@
     </linearGradient>
   </defs>
   <rect width="100%" height="100%" fill="url(#g)" />
-  <text x="6%" y="60%" fill="#fff" font-size="64" font-family="Arial" font-weight="700">Featured Movie</text>
-  <text x="6%" y="72%" fill="#e5e7eb" font-size="20" font-family="Arial">An exciting featured title — watch now.</text>
 </svg>
